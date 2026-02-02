@@ -10,12 +10,6 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
-    # env:
-    #   # SOURCE_URL: "https://dummyjson.com/products" # This is a public API that produces dummy products
-    #   # PAGE_SIZE: "100" # dummyjson supports limit/skip pagination
-    #   # NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }} # That is an env variable that you will set in your repo
-    #   # # DO NOT hardcode tokens. Put them in Secrets.
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4 # This action clones the content of the current repo into the remote runner
